@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- daisyui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <ul class="nav-item max-w-5xl mx-auto">
+                <li><a href="./index.html"><button class="blog-btn">Home</button></a></li>
+
+                <li class="brand">
+                    <img src="./assets/logo.png" alt="">
+                    <p>Donate Bangladesh</p>
+                </li>
+
+                <li class="donate">
+                    <img src="./assets/coin.png" alt="">
+                    <p><span id="availableBalance">5500</span> BDT</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    <section class=" max-w-5xl mx-auto mt-20">
+
+        <h2 class="text-3xl font-bold mb-8 flex">
+            Important FAQ 
+            <img class="pl-4 w-14" src="./assets/icons8-faq-50.png" alt="">
+        </h2>
+
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-lg font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content text-sm">
+                <p>The Document Object Model (DOM) is a programming interface for web documents, representing the structure of HTML and XML as a tree of objects. It allows scripts to dynamically access, modify, and manipulate the content, structure, and style of a webpage.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content text-sm">
+                <p>We can select an element from the DOM using methods like document.getElementById('id') for selecting by ID or document.querySelector('selector') for selecting using CSS selectors. These methods return the first matching element, allowing us to manipulate it through JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content text-sm">
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element instead of multiple listeners on child elements. This allows events triggered by child elements to bubble up to the parent, which can then handle them efficiently. It's useful for improving performance, simplifying code management, and enabling dynamic elements to respond to events without needing additional listeners.</p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-lg font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content text-sm">
+                  <p>We can manipulate an element's attributes using element.setAttribute('attributeName', 'value') to set a specific attribute or element.getAttribute('attributeName') to retrieve it. To change styles, use element.style.propertyName = 'value', allowing us to directly modify CSS properties of the element.</p>
+                </div>
+              </div>
+          </div>
+
+    </section>
+ 
+
+    <footer>
+        <div class="h-32 bg-gray-100 mt-20"></div>
+    </footer>
+
+    </main>
+</body>
+</html>
